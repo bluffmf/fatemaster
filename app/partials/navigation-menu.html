@@ -1,0 +1,25 @@
+<div ng-controller="NavCtrl">
+
+    <nav class="navbar navbar-default" style="z-index:999" role="navigation">
+        <img class="logo" ng-src="../img/logo.jpg" />
+        <span class="logo gl"><input type="text" placeholder="Введите текст"  /><input type="button" class="btn search" value="Поиск" /></span>
+        <div class="container">
+            <div class="navbar-header">
+                <div><a class="navbar-brand gl" href="#"><b>Главная</b></a></div>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav nav-pills" id="navig">
+                        <li ng-class="{active:isActive('/products')}"><a href="#/products">Продукт</a></li>
+                    <li ng-class="{active:isActive('/gallery')}"><a href="#/gallery">Галерея</a></li>
+                    <li ng-class="{active:isActive('/media')}"><a href="#/media">Медиа</a></li>
+                    <li ng-class="{active:isActive('/video')}"><a href="#/video">Видео</a></li>
+                    <li ng-class="{active:isActive('/contacts')}"><a href="#/contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</div>
+
+
